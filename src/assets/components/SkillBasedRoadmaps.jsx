@@ -1,4 +1,4 @@
-import { skillBasedRoadmaps } from "../../data";
+import { roadmaps } from "../../data";
 import Roadmaps from "./Roadmaps";
 
 export default function SkillBasedRoadmaps() {
@@ -13,9 +13,11 @@ export default function SkillBasedRoadmaps() {
       </div>
       <div className="flex justify-center">
         <div className="grid grid-cols-3 w-1/2 mt-10 gap-2 content-center">
-          {skillBasedRoadmaps.map((roadmap) => (
-            <Roadmaps key={roadmap.id} roadmap={roadmap} />
-          ))}
+          {roadmaps.map((roadmap) =>
+            roadmap.category === "skillbased" ? (
+              <Roadmaps key={roadmap.id} roadmap={roadmap} />
+            ) : null
+          )}
         </div>
       </div>
     </div>

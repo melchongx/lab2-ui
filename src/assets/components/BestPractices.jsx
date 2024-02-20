@@ -1,4 +1,4 @@
-import { bestPractices } from "../../data";
+import { roadmaps } from "../../data";
 import Roadmaps from "./Roadmaps";
 
 export default function BestPractices() {
@@ -13,9 +13,11 @@ export default function BestPractices() {
       </div>
       <div className="flex justify-center">
         <div className="grid grid-cols-3 w-1/2 mt-10 gap-2 content-center">
-          {bestPractices.map((roadmap) => (
-            <Roadmaps key={roadmap.id} roadmap={roadmap} />
-          ))}
+          {roadmaps.map((roadmap) =>
+            roadmap.category === "rolebased" ? (
+              <Roadmaps key={roadmap.id} roadmap={roadmap} />
+            ) : null
+          )}
         </div>
       </div>
     </div>

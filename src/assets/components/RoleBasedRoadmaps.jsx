@@ -1,5 +1,5 @@
-import { CiBookmark } from "react-icons/ci";
-import { roleBasedRoadmaps } from "../../data";
+import { roadmaps } from "../../data";
+import Roadmaps from "./Roadmaps";
 
 export default function RoleBasedRoadmaps() {
   return (
@@ -13,13 +13,8 @@ export default function RoleBasedRoadmaps() {
       </div>
       <div className="flex justify-center">
         <div className="grid grid-cols-3 w-1/2 mt-10 gap-2 content-center">
-          {roleBasedRoadmaps.map((roadmap, index) => (
-            <div
-              className="flex w-full border border-solid border-zinc-700 rounded-md px-3 py-4 hover:border-zinc-500"
-              href="#"
-            >
-              <a className="text-zinc-400">{roadmap.name}</a>
-            </div>
+          {roadmaps.map((roadmap) => (
+            <Roadmaps key={roadmap.id} roadmap={roadmap} />
           ))}
         </div>
       </div>

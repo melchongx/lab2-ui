@@ -1,5 +1,5 @@
-import { CiBookmark } from "react-icons/ci";
 import { skillBasedRoadmaps } from "../../data";
+import Roadmaps from "./Roadmaps";
 
 export default function SkillBasedRoadmaps() {
   return (
@@ -13,13 +13,8 @@ export default function SkillBasedRoadmaps() {
       </div>
       <div className="flex justify-center">
         <div className="grid grid-cols-3 w-1/2 mt-10 gap-2 content-center">
-          {skillBasedRoadmaps.map((roadmap, index) => (
-            <div
-              className="flex w-full border border-solid border-zinc-700 rounded-md px-3 py-4 hover:border-zinc-500"
-              href="#"
-            >
-              <a className="text-zinc-400">{roadmap.name}</a>
-            </div>
+          {skillBasedRoadmaps.map((roadmap) => (
+            <Roadmaps key={roadmap.id} roadmap={roadmap} />
           ))}
         </div>
       </div>

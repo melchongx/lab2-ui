@@ -1,208 +1,241 @@
-export
-
-const roleBasedRoadmaps = [
-    {
-        name:"Frontend",
-        isFav:false,
-    },
-    {
-        name:"Backend",
-        isFav:false,
-    },
-    {
-        name:"DevOps",
-        isFav:false,
-    },
-    {
-        name:"Full Stack",
-        isFav:false,
-    },
-    {
-        name:"Android",
-        isFav:false,
-    },
-    {
-        name:"PostgreSQL",
-        isFav:false,
-    },
-    {
-        name:"AI and Data Scientist",
-        isFav:false,
-    },
-    {
-        name:"Blockchain",
-        isFav:false,
-    },
-    {
-        name:"QA",
-        isFav:false,
-    },
-    {
-        name:"Software Architect",
-        isFav:false,
-    },
-    {
-        name:"ASP.NET Core",
-        isFav:false,
-    },
-    {
-        name:"C++",
-        isFav:false,
-    },
-    {
-        name:"Flutter",
-        isFav:false,
-    },
-    {
-        name:"Cyber Security",
-        isFav:false,
-    },
-    {
-        name:"UX Design",
-        isFav:false,
-    },
-    {
-        name:"React Native",
-        isFav:false,
-    },
-    {
-        name:"Game Developer",
-        isFav:false,
-    },
-    {
-        name:"Technical Writer",
-        isFav:false,
-    },
-];
-
-export
-
-const skillBasedRoadmaps = [
-    {
-        name:"Computer Science",
-        isFav:false,
-    },
-    {
-        name:"React",
-        isFav:false,
-    },
-    {
-        name:"Angular",
-        isFav:false,
-    },
-    {
-        name:"Vue",
-        isFav:false,
-    },
-    {
-        name:"JavaScript",
-        isFav:false,
-    },
-    {
-        name:"Node.js",
-        isFav:false,
-    },
-    {
-        name:"TypeScript",
-        isFav:false,
-    },
-    {
-        name:"Python",
-        isFav:false,
-    },
-    {
-        name:"SQL",
-        isFav:false,
-    },
-    {
-        name:"System Design",
-        isFav:false,
-    },
-    {
-        name:"Java",
-        isFav:false,
-    },
-    {
-        name:"Spring Boot",
-        isFav:false,
-    },
-    {
-        name:"Go Roadmap",
-        isFav:false,
-    },
-    {
-        name:"Rust",
-        isFav:false,
-    },
-    {
-        name:"GraphQL",
-        isFav:false,
-    },
-    {
-        name:"Design and Architecture",
-        isFav:false,
-    },
-    {
-        name:"Design System",
-        isFav:false,
-    },
-    {
-        name:"AWS",
-        isFav:false,
-    },
-    {
-        name:"Code Review",
-        isFav:false,
-    },
-    {
-        name:"Docker",
-        isFav:false,
-    },
-    {
-        name:"Kubernetes",
-        isFav:false,
-    },
-    {
-        name:"MongoDB",
-        isFav:false,
-    },
-    {
-        name:"Prompt Engineering",
-        isFav:false,
-    },
-];
-
-export
-
-const bestPractices = [
-    {
-        name:"Frontend Performance",
-        isFav:false,
-    },
-    {
-        name:"API Security",
-        isFav:false,
-    },
-    {
-        name:"Code Reviews",
-        isFav:false,
-    },
-    {
-        name:"AWS",
-        isFav:false,
-    },
-];
-
-export
-
-const questions = [
-    {
-        name:"JavaScript",
-    },
-    {
-        name:"Node.js",
-    },
-    {
-        name:"React",
-    },
+export const roadmaps = [
+  {
+    name: "Frontend",
+    category: "rolebased",
+    isFav: false,
+  },
+  {
+    name: "Backend",
+    category: "rolebased",
+    isFav: false,
+  },
+  {
+    name: "DevOps",
+    category: "rolebased",
+    isFav: false,
+  },
+  {
+    name: "Full Stack",
+    category: "rolebased",
+    isFav: false,
+  },
+  {
+    name: "Android",
+    category: "rolebased",
+    isFav: false,
+  },
+  {
+    name: "PostgreSQL",
+    category: "rolebased",
+    isFav: false,
+  },
+  {
+    name: "AI and Data Scientist",
+    category: "rolebased",
+    isFav: false,
+  },
+  {
+    name: "Blockchain",
+    category: "rolebased",
+    isFav: false,
+  },
+  {
+    name: "QA",
+    category: "rolebased",
+    isFav: false,
+  },
+  {
+    name: "Software Architect",
+    category: "rolebased",
+    isFav: false,
+  },
+  {
+    name: "ASP.NET Core",
+    category: "rolebased",
+    isFav: false,
+  },
+  {
+    name: "C++",
+    category: "rolebased",
+    isFav: false,
+  },
+  {
+    name: "Flutter",
+    category: "rolebased",
+    isFav: false,
+  },
+  {
+    name: "Cyber Security",
+    category: "rolebased",
+    isFav: false,
+  },
+  {
+    name: "UX Design",
+    category: "rolebased",
+    isFav: false,
+  },
+  {
+    name: "React Native",
+    category: "rolebased",
+    isFav: false,
+  },
+  {
+    name: "Game Developer",
+    category: "rolebased",
+    isFav: false,
+  },
+  {
+    name: "Technical Writer",
+    category: "rolebased",
+    isFav: false,
+  },
+  {
+    name: "Computer Science",
+    category: "skillbased",
+    isFav: false,
+  },
+  {
+    name: "React",
+    category: "skillbased",
+    isFav: false,
+  },
+  {
+    name: "Angular",
+    isFav: false,
+  },
+  {
+    name: "Vue",
+    category: "skillbased",
+    isFav: false,
+  },
+  {
+    name: "JavaScript",
+    category: "skillbased",
+    isFav: false,
+  },
+  {
+    name: "Node.js",
+    category: "skillbased",
+    isFav: false,
+  },
+  {
+    name: "TypeScript",
+    category: "skillbased",
+    isFav: false,
+  },
+  {
+    name: "Python",
+    category: "skillbased",
+    isFav: false,
+  },
+  {
+    name: "SQL",
+    category: "skillbased",
+    isFav: false,
+  },
+  {
+    name: "System Design",
+    category: "skillbased",
+    isFav: false,
+  },
+  {
+    name: "Java",
+    category: "skillbased",
+    isFav: false,
+  },
+  {
+    name: "Spring Boot",
+    category: "skillbased",
+    isFav: false,
+  },
+  {
+    name: "Go Roadmap",
+    category: "skillbased",
+    isFav: false,
+  },
+  {
+    name: "Rust",
+    category: "skillbased",
+    isFav: false,
+  },
+  {
+    name: "GraphQL",
+    category: "skillbased",
+    isFav: false,
+  },
+  {
+    name: "Design and Architecture",
+    category: "skillbased",
+    isFav: false,
+  },
+  {
+    name: "Design System",
+    category: "skillbased",
+    isFav: false,
+  },
+  {
+    name: "AWS",
+    category: "skillbased",
+    isFav: false,
+  },
+  {
+    name: "Code Review",
+    category: "skillbased",
+    isFav: false,
+  },
+  {
+    name: "Docker",
+    category: "skillbased",
+    isFav: false,
+  },
+  {
+    name: "Kubernetes",
+    category: "skillbased",
+    isFav: false,
+  },
+  {
+    name: "MongoDB",
+    category: "skillbased",
+    isFav: false,
+  },
+  {
+    name: "Prompt Engineering",
+    category: "skillbased",
+    isFav: false,
+  },
+  {
+    name: "Frontend Performance",
+    category: "bestpractices",
+    isFav: false,
+  },
+  {
+    name: "API Security",
+    category: "bestpractices",
+    isFav: false,
+  },
+  {
+    name: "Code Reviews",
+    category: "bestpractices",
+    isFav: false,
+  },
+  {
+    name: "AWS",
+    category: "bestpractices",
+    isFav: false,
+  },
+  {
+    name: "JavaScript",
+    category: "question",
+    isFav: false,
+  },
+  {
+    name: "Node.js",
+    category: "question",
+    isFav: false,
+  },
+  {
+    name: "React",
+    category: "question",
+    isFav: false,
+  },
 ];
